@@ -8,7 +8,7 @@ spring:
 
 logging:
   level:
-    root: info
+    root: trace
     org.springframework.web: debug
     org.springframework.security: debug
 
