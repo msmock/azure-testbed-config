@@ -1,0 +1,15 @@
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+logging:
+  level:
+    root: info
+    org.springframework.web: debug
+    org.springframework.security: debug
+
+---
