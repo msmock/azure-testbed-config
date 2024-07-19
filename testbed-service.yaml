@@ -6,6 +6,12 @@ spring:
          config:
           auto-refresh: true
           refresh-interval: 60
+management:
+    endpoints:
+         web:
+          exposure:
+            include:
+              - refresh
 
 ---
 
