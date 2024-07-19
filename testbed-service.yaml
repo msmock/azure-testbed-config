@@ -7,8 +7,9 @@ spring:
       on-profile: dev
 logging:
   level:
-    root: debug
-    org.springframework.web: debug
-    org.springframework.security: debug
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info
+    org.nahsi.example.test.config: debug
 
 ---
