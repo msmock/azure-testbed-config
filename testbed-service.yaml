@@ -1,6 +1,12 @@
 
 testProperty: test property setting
 
+spring:
+    cloud:
+         config:
+          auto-refresh: true
+          refresh-interval: 60
+
 ---
 
 spring:
