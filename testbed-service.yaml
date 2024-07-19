@@ -10,6 +10,6 @@ logging:
     root: info
     org.springframework.web: info
     org.springframework.security: info
-    org.nahsi.example.test.config: debug
+    org.nahsi.example.test.config: info
 
 ---
