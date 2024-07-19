@@ -1,5 +1,5 @@
 
-testProperty: test property setting
+testProperty: test property setting, changed ...
 
 spring:
     cloud:
