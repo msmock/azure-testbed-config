@@ -1,4 +1,6 @@
 
+testProperty: test property setting
+
 ---
 
 spring:
