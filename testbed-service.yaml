@@ -7,11 +7,12 @@ spring:
           auto-refresh: true
           refresh-interval: 60
 management:
-    endpoints:
-         web:
-          exposure:
-            include:
-              - refresh
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - refresh            
 
 ---
 
@@ -25,5 +26,12 @@ logging:
     org.springframework.web: info
     org.springframework.security: info
     org.nahsi.example.test.scheduler: debug
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"  
 
 ---
