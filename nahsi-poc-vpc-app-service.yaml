@@ -26,6 +26,7 @@ logging:
     root: info
     org.springframework.web: info
     org.springframework.security: info
+    org.springframework.cloud.netflix: error
     com.netflix.discovery: error
     org.nahsi.example.test.scheduler: debug
 
