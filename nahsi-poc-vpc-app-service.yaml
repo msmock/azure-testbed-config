@@ -20,12 +20,15 @@ spring:
   config:
     activate:
       on-profile: dev
+
 logging:
   level:
     root: info
     org.springframework.web: info
     org.springframework.security: info
+    com.netflix.discovery: error
     org.nahsi.example.test.scheduler: debug
+
 management:
   endpoints:
     enabled-by-default: true
