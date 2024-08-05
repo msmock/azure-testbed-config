@@ -3,9 +3,17 @@ testProperty: update property setting 11:35
 
 spring:
     cloud:
-         config:
-          auto-refresh: true
-          refresh-interval: 60
+      config:
+        auto-refresh: true
+        refresh-interval: 60
+    azure:
+      keyvault:
+        secret:
+          property-sources:
+            - endpoint: 'https://nahsi-poc-vault.vault.azure.net/'
+              credential:
+                managed-identity-enabled: true
+
 management:
   endpoints:
     enabled-by-default: true
