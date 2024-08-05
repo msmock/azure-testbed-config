@@ -2,10 +2,10 @@
 testProperty: update property setting 11:35
 
 spring:
-    cloud:
-      config:
-        auto-refresh: true
-        refresh-interval: 60
+  cloud:
+    config:
+      auto-refresh: true
+      refresh-interval: 60
 
 management:
   endpoints:
