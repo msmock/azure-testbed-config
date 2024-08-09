@@ -10,7 +10,7 @@ spring:
       keyvault:
         secret:
           property-sources:
-            - endpoint: 'https://poc-vault.vault.azure.net/'
+            - endpoint: 'https://nahsi-poc-vault.vault.azure.net/'
               credential:
                 managed-identity-enabled: true
 
