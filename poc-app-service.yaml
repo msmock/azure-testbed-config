@@ -6,13 +6,6 @@ spring:
     config:
       auto-refresh: true
       refresh-interval: 60
-    azure:
-      keyvault:
-        secret:
-          property-sources:
-            - endpoint: 'https://nahsi-poc-vault.vault.azure.net/'
-              credential:
-                managed-identity-enabled: true
 
 management:
   endpoints:
