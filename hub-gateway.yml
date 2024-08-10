@@ -2,6 +2,9 @@ spring:
   application:
     name: poc-gateway
   cloud:
+    config:
+      auto-refresh: true
+      refresh-interval: 60
     gateway:
       routes:
       - id: greet
