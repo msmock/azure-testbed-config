@@ -10,7 +10,7 @@ spring:
           predicates:
           - Path=/get
         - id: test-peering
-          uri: http://10.1.0.6/
+          uri: http://10.1.0.6
           predicates:
             - Path=/randomuser
 
