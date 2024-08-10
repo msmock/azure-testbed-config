@@ -7,11 +7,11 @@ spring:
         - id: httpbin
           uri: http://httpbin.org:80
           predicates:
-            - Path=/get
+          - Path=/get
         - id: random
           uri: http://randomuser.me/
           predicates:
-            - Path=/
+          - Path=/random
 
     config:
       auto-refresh: true
