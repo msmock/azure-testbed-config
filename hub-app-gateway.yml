@@ -1,5 +1,8 @@
 spring:
   cloud:
+    config:
+      auto-refresh: true
+      refresh-interval: 60
     gateway:
       routes:
         - id: httpbin
@@ -10,10 +13,6 @@ spring:
           uri: http://randomuser.me
           predicates:
           - Path=/api
-
-    config:
-      auto-refresh: true
-      refresh-interval: 60
 
 management:
   endpoints:
