@@ -1,6 +1,6 @@
 spring:
   application:
-    name: hub-gateway
+    name: 'hub-gateway'
   cloud:
     config:
       auto-refresh: true
@@ -14,17 +14,11 @@ spring:
       - id: httpbin
         uri: http://httpbin.org:80
         predicates:
-        - Path=/httpbin
+        - Path=/httpbin/**
       - id: practitioner
         uri: lb://poc-service
         predicates:
         - Path=/practitioner/**
-
-server:
-  compression:
-    enabled: true
-    mime-types: application/json,text/css,application/javascript
-    min-response-size: 2048
 
 management:
   endpoints:
