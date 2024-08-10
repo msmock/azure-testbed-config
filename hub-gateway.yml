@@ -8,10 +8,8 @@ spring:
           uri: http://httpbin.org:80
           predicates:
             - Path=/get
-        - id: randomuser
-          uri: http://randomuser.me/
-          predicates:
-            - Path=/ramdomuser
+        - id: random
+          uri: http://randomuser.me
 
     config:
       auto-refresh: true
