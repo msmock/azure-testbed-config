@@ -26,6 +26,14 @@ server:
     mime-types: application/json,text/css,application/javascript
     min-response-size: 2048
 
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - refresh
+
 ---
 # shall include: "*" in non production only
 spring:
