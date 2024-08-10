@@ -22,4 +22,5 @@ management:
       exposure:
         include:
           - refresh
+          - gateway
 
