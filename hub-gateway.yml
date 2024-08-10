@@ -11,7 +11,7 @@ spring:
         - id: random
           uri: http://randomuser.me/
           predicates:
-          - Path=/random
+          - Path=/api
 
     config:
       auto-refresh: true
