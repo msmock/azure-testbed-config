@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: hub-gateway
   cloud:
     gateway:
       routes:
