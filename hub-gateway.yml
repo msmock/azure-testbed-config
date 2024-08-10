@@ -18,16 +18,3 @@ management:
         include:
           - refresh
 
----
-# shall include: "*" in non production only
-spring:
-  config:
-    activate:
-      on-profile: test
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-        exclude: "env,beans"
----
