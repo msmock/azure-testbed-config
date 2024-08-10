@@ -1,6 +1,6 @@
 spring:
   application:
-    name: poc-gateway
+    name: hub-gateway
   cloud:
     config:
       auto-refresh: true
@@ -14,7 +14,7 @@ spring:
       - id: httpbin
         uri: http://httpbin.org:80
         predicates:
-        - Path=/get
+        - Path=/httpbin
       - id: practitioner
         uri: lb://poc-service
         predicates:
