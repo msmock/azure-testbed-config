@@ -10,7 +10,7 @@ spring:
           predicates:
           - Path=/get
         - id: test-peering
-          uri: http://10.1.0.6
+          uri: https://poc-app-poc-app-service.private.azuremicroservices.io
           predicates:
             - Path=/randomuser
 
