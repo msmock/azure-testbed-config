@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: poc-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: greet
+        uri: lb://poc-service
+        predicates:
+        - Path=/greeting
+      - id: httpbin
+        uri: http://httpbin.org:80
+        predicates:
+        - Path=/get
+      - id: practitioner
+        uri: lb://poc-service
+        predicates:
+        - Path=/practitioner/**
+
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,text/css,application/javascript
+    min-response-size: 2048
+
+---
+# shall include: "*" in non production only
+spring:
+  config:
+    activate:
+      on-profile: test
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+---
