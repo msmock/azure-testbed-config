@@ -1,24 +1,14 @@
 spring:
-  application:
-    name: 'hub-gateway'
   cloud:
     config:
       auto-refresh: true
       refresh-interval: 60
     gateway:
       routes:
-      - id: greet
-        uri: lb://poc-service
-        predicates:
-        - Path=/greeting
       - id: httpbin
         uri: http://httpbin.org:80
         predicates:
         - Path=/httpbin
-      - id: practitioner
-        uri: lb://poc-service
-        predicates:
-        - Path=/practitioner/**
 
 management:
   endpoints:
