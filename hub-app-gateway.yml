@@ -9,10 +9,10 @@ spring:
           uri: http://httpbin.org:80
           predicates:
           - Path=/get
-        - id: random
-          uri: http://randomuser.me
+        - id: test-peering
+          uri: http://10.1.0.6/
           predicates:
-          - Path=/api
+            - Path=/randomuser
 
 management:
   endpoints:
