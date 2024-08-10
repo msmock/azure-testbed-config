@@ -9,9 +9,9 @@ spring:
           predicates:
             - Path=/get
         - id: randomuser
-          uri: http://randomuser.me
+          uri: http://randomuser.me/
           predicates:
-            - Path=/randomuser
+            - Path=/ramdomuser
 
     config:
       auto-refresh: true
