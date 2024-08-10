@@ -9,10 +9,6 @@ spring:
         uri: http://httpbin.org:80
         predicates:
         - Path=/httpbin
-      - id: baeldung_route
-        uri: http://baeldung.com
-        predicates:
-        - Path=/baeldung/
 
 management:
   endpoints:
