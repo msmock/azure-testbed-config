@@ -14,7 +14,7 @@ spring:
       - id: httpbin
         uri: http://httpbin.org:80
         predicates:
-        - Path=/httpbin/**
+        - Path=/httpbin
       - id: practitioner
         uri: lb://poc-service
         predicates:
