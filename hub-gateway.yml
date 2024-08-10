@@ -7,7 +7,7 @@ spring:
           predicates:
           - Path=/get
         - id: random
-          uri: http://randomuser.me/
+          uri: http://randomuser.me
           predicates:
           - Path=/api
 
