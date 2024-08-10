@@ -19,7 +19,30 @@ management:
     enabled-by-default: true
     web:
       exposure:
-        include:
-          - refresh
-          - gateway
+        include: refresh
 
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info
+    org.springframework.cloud.netflix: error
+    com.netflix.discovery: error
+    org.nahsi.example.test.scheduler: debug
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,beans"
+
+---
