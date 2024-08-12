@@ -9,10 +9,18 @@ spring:
           uri: http://httpbin.org:80
           predicates:
           - Path=/get
-        - id: test-peering
-          uri: http://10.1.0.6
+        - id: randomuser-test
+          uri: https://poc-app-poc-app-service.azuremicroservices.io
           predicates:
-            - Path=/randomuser
+          - Path=/randomuser
+        - id: vault-access-test
+          uri: https://poc-app-poc-app-service.azuremicroservices.io
+          predicates:
+          - Path=/randomuser
+        - id: config-access-test
+          uri: https://poc-app-poc-app-service.azuremicroservices.io
+          predicates:
+          - Path=/testproperty
 
 management:
   endpoints:
