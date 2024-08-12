@@ -10,15 +10,15 @@ spring:
           predicates:
           - Path=/get
         - id: randomuser-test
-          uri: https://poc-app-poc-app-service.azuremicroservices.io
+          uri: https://20.250.209.139
           predicates:
           - Path=/randomuser
         - id: vault-access-test
-          uri: https://poc-app-poc-app-service.azuremicroservices.io
+          uri: https://20.250.209.139
           predicates:
-          - Path=/randomuser
+          - Path=/vault
         - id: config-access-test
-          uri: https://poc-app-poc-app-service.azuremicroservices.io
+          uri: https://20.250.209.139
           predicates:
           - Path=/testproperty
 
