@@ -10,7 +10,7 @@ spring:
           predicates:
           - Path=/get
         - id: randomuser-test
-          uri: https://poc-app-poc-app-service.private.azuremicroservices.io
+          uri: https://poc-app.private.azuremicroservices.io
           predicates:
           - Path=/randomuser
         - id: vault-access-test
