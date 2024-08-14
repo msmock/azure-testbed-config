@@ -10,15 +10,15 @@ spring:
           predicates:
           - Path=/get
         - id: randomuser-test
-          uri: https://20.250.209.139
+          uri: https://poc-app-poc-app-service.private.azuremicroservices.io
           predicates:
           - Path=/randomuser
         - id: vault-access-test
-          uri: https://20.250.209.139
+          uri: https://poc-app-poc-app-service.private.azuremicroservices.io
           predicates:
           - Path=/vault
         - id: config-access-test
-          uri: https://20.250.209.139
+          uri: https://primary:HEBLBWsxGLNHFRX6zcaiu8vMmx6ohIpAxGlg1gB7VjITHquxPYleScoyQu01HCmT@poc-app.test.private.azuremicroservices.io/poc-app-service/default
           predicates:
           - Path=/testproperty
 
@@ -39,11 +39,11 @@ spring:
 logging:
   level:
     root: info
-    org.springframework.web: info
+    org.springframework.web: error
     org.springframework.security: info
     org.springframework.cloud.netflix: error
     com.netflix.discovery: error
-    org.nahsi.example.test.scheduler: debug
+    org.springframework.cloud.endpoint: error
 
 management:
   endpoints:
