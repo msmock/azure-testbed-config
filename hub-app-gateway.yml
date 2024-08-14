@@ -42,6 +42,7 @@ logging:
     org.springframework.web: error
     org.springframework.security: info
     org.springframework.cloud.netflix: error
+    org.springframework.cloud.config: error
     com.netflix.discovery: error
     org.springframework.cloud.endpoint: error
 
