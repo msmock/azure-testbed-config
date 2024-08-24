@@ -34,8 +34,17 @@ eureka:
     healthcheck:
       enabled: true
 
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info
+    org.springframework.cloud.netflix: error
+    com.netflix.discovery: error
+
 # shall include: "*" in non production only
 ---
+
 spring:
   config:
     activate:
