@@ -39,6 +39,8 @@ logging:
     org.springframework.cloud.netflix: error
     com.netflix.discovery: error
     org.nahsi.example.test.scheduler: debug
+    org.apache.tomcat: debug
+    org.apache.catalina: debug
 
 management:
   endpoints:
