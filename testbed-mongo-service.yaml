@@ -1,3 +1,5 @@
+server:
+  port: 9999
 
 testProperty: update property setting 5 Aug 14:20
 
