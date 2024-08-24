@@ -22,7 +22,7 @@ management:
         include:
           - refresh
 
-# only req is running local
+# only required is running local
 eureka:
   instance:
     preferIpAddress: true
@@ -37,7 +37,7 @@ eureka:
 logging:
   level:
     root: info
-    org.springframework.web: info
+    org.springframework.web: debug
     org.springframework.security: info
     org.springframework.cloud.netflix: error
     com.netflix.discovery: error
