@@ -41,6 +41,7 @@ logging:
     org.springframework.security: info
     org.springframework.cloud.netflix: error
     com.netflix.discovery: error
+    ch.qos.logback.classic: error
 
 # shall include: "*" in non production only
 ---
