@@ -1,9 +1,28 @@
 server: 
   port: 0 #required by spring boot to assign a random port
-spring:
-  application:
-    name: poc-mongo-service
 
+spring:
+  cloud:
+    config:
+      auto-refresh: true
+      refresh-interval: 60
+    azure:
+      keyvault:
+        secret:
+          property-sources:
+            - endpoint: 'https://nahsi-poc-vault.vault.azure.net/'
+              credential:
+                managed-identity-enabled: true
+
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - refresh
+
+# only req is running local
 eureka:
   instance:
     preferIpAddress: true
