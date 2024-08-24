@@ -1,5 +1,5 @@
-server: 
-  port: 0 #required by spring boot to assign a random port
+
+testProperty: update property setting 5 Aug 14:20
 
 spring:
   cloud:
@@ -22,38 +22,28 @@ management:
         include:
           - refresh
 
-# only required is running local
-eureka:
-  instance:
-    preferIpAddress: true
-    # enable to register multiple app instances with a random server port
-    instance-id: ${spring.application.name}:${random.uuid}
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true
-
-logging:
-  level:
-    root: info
-    org.springframework.web: debug
-    org.springframework.security: info
-    org.springframework.cloud.netflix: error
-    com.netflix.discovery: error
-    ch.qos.logback: error
-
-# shall include: "*" in non production only
 ---
 
 spring:
   config:
     activate:
       on-profile: dev
+
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info
+    org.springframework.cloud.netflix: error
+    com.netflix.discovery: error
+    org.nahsi.example.test.scheduler: debug
+
 management:
   endpoints:
+    enabled-by-default: true
     web:
       exposure:
         include: "*"
         exclude: "env,beans"
----        
+
+---
